@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import ua.edu.ucu.apps.store.flower.Flower;
+import ua.edu.ucu.apps.store.flower.FlowerColor;
+import ua.edu.ucu.apps.store.flower.FlowerType;
 import ua.edu.ucu.apps.store.store.Item;
 
 import java.util.Map;
@@ -36,6 +38,11 @@ public class FlowerController {
 
     @PostMapping("/add")
     public void addFlower(@RequestBody Map<String, Object> json) {
-        flowerService.add(new Flower());
+        double price = Double.parseDouble(json.get("price").toString());
+        double length = Double.parseDouble(json.get("sepalLength").toString());
+        String description = json.get("description").toString();
+
+        flowerService.add(new Flower(length, FlowerColor.RED, price, FlowerType.ROSE, 
+            description));
     }
 }

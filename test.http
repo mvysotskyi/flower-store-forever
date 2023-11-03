@@ -5,7 +5,8 @@ POST http://localhost:8080/api/v1/add
 Content-Type: application/json
 
 {
-  "sepalLength": 100,
+  "sepalLength": 1000,
   "color": "blue",
-  "price": 100
+  "price": 1000,
+  "description": "best flower ever"
 }
