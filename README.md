@@ -1,2 +1,2 @@
-# flower-store-forever
+# flower-store-continue
 Lab work for OOP course.
