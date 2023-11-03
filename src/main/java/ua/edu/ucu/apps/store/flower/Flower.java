@@ -78,10 +78,6 @@ public class Flower extends Item {
     }
 
     public static Flower fromJson(Map<String, Object> json) {
-        return new Flower((double)json.get("sepal_length"),
-                          FlowerColor.RED,
-                          (double)json.get("price"),
-                          FlowerType.valueOf((String)json.get("flower_type")),
-                          (String)json.get("description"));
+        return new Flower();
     }
 }

@@ -3,6 +3,8 @@ package ua.edu.ucu.apps.store.decorators;
 import ua.edu.ucu.apps.store.store.Item;
 
 public class RibbonDecorator extends AbstractDecorator {
+    private static final double RIBBON_PRICE = 40;
+
     private Item item;
     private String description;
 
@@ -13,7 +15,7 @@ public class RibbonDecorator extends AbstractDecorator {
 
     @Override
     public double getPrice() {
-        return item.getPrice() + 40;
+        return item.getPrice() + RIBBON_PRICE;
     }
 
     @Override

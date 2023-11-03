@@ -16,10 +16,10 @@ public abstract class Item {
     private String description;
 
     public String toJson() {
-        return "{" +
-                "\"id\": " + id +
-                ", \"price\": " + price +
-                ", \"description\": \"" + description + "\"" +
-                "}";
+        return "{"
+                + "\"id\": " + id
+                + ", \"price\": " + price
+                + ", \"description\": \"" + description + "\""
+                + "}";
     }
 }

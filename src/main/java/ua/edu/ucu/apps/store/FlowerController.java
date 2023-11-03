@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import ua.edu.ucu.apps.store.flower.Flower;
-import ua.edu.ucu.apps.store.FlowerService;
 import ua.edu.ucu.apps.store.store.Item;
 
 import java.util.Map;
